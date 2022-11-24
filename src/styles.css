@@ -1,0 +1,23 @@
+.pote {
+    position: relative; 
+    padding: 20px;
+    width:50px; height: 50px; 
+    border-radius: 100%; 
+    box-shadow: 0 0 0 5px silver; 
+    overflow: hidden; 
+    transform: rotate(45deg); 
+    cursor: ew-resize;
+}
+.pote>div {
+    position: absolute; 
+    width: inherit; height: inherit; 
+    top: 0; left: 0; 
+    background: 
+    linear-gradient(90deg, grey 48%, black 49%, black 51%, grey 52%) 0px 35px no-repeat, grey; 
+    box-shadow: inset 0 0 0 5px grey; 
+    transition: transform 300ms ease-out; 
+}
+.pote span {
+    position: absolute; 
+    -webkit-user-drag: none;
+}
